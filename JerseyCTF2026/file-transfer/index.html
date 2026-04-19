@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../JerseyCTF2026/spaceman/">
+        <link rel="prev" href="../coldwake/">
       
       
-        <link rel="next" href="../lost_my_keys/">
+        <link rel="next" href="../fixyourship/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Layers - My CTF Writeups</title>
+        <title>CTF Writeup: file-transfer - My CTF Writeups</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#layers" class="md-skip">
+        <a href="#ctf-writeup-file-transfer" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Layers
+              CTF Writeup: file-transfer
             
           </span>
         </div>
@@ -450,18 +450,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -482,7 +484,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -500,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../JerseyCTF2026/coldwake/" class="md-nav__link">
+      <a href="../coldwake/" class="md-nav__link">
         
   
   
@@ -525,10 +527,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../JerseyCTF2026/file-transfer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTF Writeup: file-transfer
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -544,6 +573,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenge-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-initial-pcap-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Initial PCAP Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-extracting-and-cracking-the-ntlmv2-hash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Extracting and Cracking the NTLMv2 Hash
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-decrypting-smb3-and-extracting-malware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Decrypting SMB3 and Extracting Malware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-reverse-engineering-the-malware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Reverse Engineering the Malware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-decrypting-the-c2-traffic-finding-the-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Decrypting the C2 Traffic &amp; Finding the Flag
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flag
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -556,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../JerseyCTF2026/fixyourship/" class="md-nav__link">
+      <a href="../fixyourship/" class="md-nav__link">
         
   
   
@@ -584,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../JerseyCTF2026/neptune/" class="md-nav__link">
+      <a href="../neptune/" class="md-nav__link">
         
   
   
@@ -612,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../JerseyCTF2026/qaStaHnuq/" class="md-nav__link">
+      <a href="../qaStaHnuq/" class="md-nav__link">
         
   
   
@@ -640,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../JerseyCTF2026/spaceman/" class="md-nav__link">
+      <a href="../spaceman/" class="md-nav__link">
         
   
   
@@ -672,20 +798,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -706,7 +830,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -721,37 +845,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Layers
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../TexSAW2026/layers/" class="md-nav__link">
         
   
   
@@ -767,59 +864,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#layer-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Layer 1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#layer-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Layer 2
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#layer-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Layer 3
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -832,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lost_my_keys/" class="md-nav__link">
+      <a href="../../TexSAW2026/lost_my_keys/" class="md-nav__link">
         
   
   
@@ -997,10 +1041,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#layer-1" class="md-nav__link">
+  <a href="#challenge-description" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Layer 1
+        Challenge Description
       
     </span>
   </a>
@@ -1008,10 +1052,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#layer-2" class="md-nav__link">
+  <a href="#1-initial-pcap-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Layer 2
+        1. Initial PCAP Analysis
       
     </span>
   </a>
@@ -1019,10 +1063,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#layer-3" class="md-nav__link">
+  <a href="#2-extracting-and-cracking-the-ntlmv2-hash" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Layer 3
+        2. Extracting and Cracking the NTLMv2 Hash
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-decrypting-smb3-and-extracting-malware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Decrypting SMB3 and Extracting Malware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-reverse-engineering-the-malware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Reverse Engineering the Malware
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-decrypting-the-c2-traffic-finding-the-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Decrypting the C2 Traffic &amp; Finding the Flag
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flag
       
     </span>
   </a>
@@ -1046,15 +1134,72 @@
 
 
 
-<h1 id="layers">Layers</h1>
-<p><strong>Category:</strong> Forensics</p>
-<p>We got <code>layers.zip</code> file with some zip files (<code>layer1.zip</code>, <code>layer2.zip</code> and <code>layer3.zip</code>) in it and <code>__MACOSX</code> folder. First, I verified their file signatures using <code>file</code> command to ensure they were ZIP archives. While <code>layer1.zip</code> was accessible, the second and the third archives were password-protected.</p>
-<h4 id="layer-1">Layer 1</h4>
-<p>The first ZIP contained a <code>.dmg</code> file. I extracted its contents using <code>7z</code>. Inside, I found numerous files, but one named <code>clue.txt</code> stood out. It contained the password for <code>layer2.zip</code>, which worked perfectly.</p>
-<h4 id="layer-2">Layer 2</h4>
-<p>After extracting <code>layer2.zip</code>, I got <code>.vhdx</code> file. I extracted it with <code>7z</code>. While inspecting the files, I noticed an Alternate Data Streams (ADS) named <code>report.txt:secret.bin</code>. Reading this file with <code>cat</code> I got text looking like base64 encoded text. After decoding it, I got the password for <code>layer3.zip</code>.</p>
-<h4 id="layer-3">Layer 3</h4>
-<p>The final ZIP contained an <code>.img</code> file formatted with an <code>ext4</code> filesystem (Checked with <code>file</code> command). I ran <code>strings</code> command on the image nad saw references to a <code>flag.txt</code> file. However, after extracting <code>.img</code> file, <code>flag.txt</code> file was not there. Only 1 file was interesting: <code>Journal</code>. <code>exiftool</code>, <code>xxd</code> and <code>strings</code> did not show something interesting. However <code>binwalk</code> found <code>decompressed.bin</code> file, which was identified as ASCII text. Finally, I found the flag with <code>cat</code> command.</p>
+<h1 id="ctf-writeup-file-transfer">CTF Writeup: file-transfer</h1>
+<p><strong>Category:</strong> Forensics  </p>
+<h3 id="challenge-description">Challenge Description</h3>
+<blockquote>
+<p>Our network security solution has alerted us to some suspicious traffic from a user's workstation. Can you help us figure out what is going on? 
+This is the 3rd time this month something happened with this user, we really need to improve our password policies...</p>
+</blockquote>
+<hr />
+<h2 id="1-initial-pcap-analysis">1. Initial PCAP Analysis</h2>
+<p>Opening the provided <code>.pcap</code> file in Wireshark reveals two main streams of interesting traffic:
+1. <strong>Suspicious TCP Traffic (Port 55544):</strong> Packets 1-18 show communication between <code>10.1.2.210</code> and <code>10.1.2.211</code>. Small payloads are transmitted using <code>PSH</code> flags. This looks like a Command and Control (C2) or exfiltration channel.
+2. <strong>SMB Traffic (Port 445):</strong> Starting from packet 19, there is traffic between the workstation (<code>10.1.2.210</code>) and a file server (<code>10.1.2.200</code>). We observe an NTLM authentication attempt for the user <code>IT640\operator1</code>, followed by completely encrypted SMB3 traffic.</p>
+<p>To proceed, we need to decrypt the SMB3 traffic. The description hints that the user has a weak password ("improve our password policies...").</p>
+<h2 id="2-extracting-and-cracking-the-ntlmv2-hash">2. Extracting and Cracking the NTLMv2 Hash</h2>
+<p>We need to extract the NTLM challenge and response to format a hash for cracking.</p>
+<ul>
+<li><strong>Packet 27 (NTLMSSP_CHALLENGE):</strong> We extract the <strong>Server Challenge</strong>: <code>a83c46425815db34</code></li>
+<li><strong>Packet 28 (NTLMSSP_AUTH):</strong> We extract the user credentials:</li>
+<li>Username: <code>operator1</code></li>
+<li>Domain: <code>IT640</code></li>
+<li>NTProofStr: <code>e705d3efd451d9eff0b3005233f7b573</code> (First 16 bytes of the NTLM Response)</li>
+<li>Blob: The remaining hex string of the NTLM response.</li>
+</ul>
+<p>We format this into a string that <code>John the Ripper</code> or <code>Hashcat</code> can understand:
+<code>Username::Domain:ServerChallenge:NTProofStr:Blob</code></p>
+<p><strong>Our final hash (<code>hash.txt</code>):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>operator1::IT640:a83c46425815db34:e705d3efd451d9eff0b3005233f7b573:01010000000000001366cc6ceecddc012eec3d0097740ebd0000000002000a0049005400360034003000010012005700530032003000320035002d00530031000400260063006f00720070002e00690074003600340030002e0069006e007400650072006e0061006c0003003a005700530032003000320035002d00530031002e0063006f00720070002e00690074003600340030002e0069006e007400650072006e0061006c000500260063006f00720070002e00690074003600340030002e0069006e007400650072006e0061006c00070008001366cc6ceecddc0106000400020000000800500050000000000000000000000000200000324ad49cd8c06cd57b3e895fd7e1f8b498a54f8a43816223dfab71e7013c6ce0efb9d8a1f651758f475c106843bb63d6622ba533b447ac1d4cb80299edea1f940a0010000000000000000000000000000000000009001e0063006900660073002f00310030002e0031002e0032002e003200300030000000000000000000
+</code></pre></div></p>
+<p>We crack it using the <code>rockyou.txt</code> wordlist:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>john<span class="w"> </span>--format<span class="o">=</span>netntlmv2<span class="w"> </span>hash.txt<span class="w"> </span>--wordlist<span class="o">=</span>rockyou.txt
+</code></pre></div>
+<strong>Result:</strong> The password is <strong><code>password</code></strong>.</p>
+<h2 id="3-decrypting-smb3-and-extracting-malware">3. Decrypting SMB3 and Extracting Malware</h2>
+<p>With the password recovered, we configure Wireshark to decrypt the traffic:
+1. Navigate to <strong>Edit -&gt; Preferences -&gt; Protocols -&gt; NTLMSSP</strong>.
+2. Enter the <strong>NTLM Password</strong>: <code>password</code>.
+3. Ensure <strong>SMB2</strong> decryption options are enabled.</p>
+<p>The "Encrypted SMB3" packets instantly turn into readable Read/Write requests. We can observe the user downloading an executable.
+We extract the file by navigating to <strong>File -&gt; Export Objects -&gt; SMB</strong> and saving <strong><code>DaVinci.exe</code></strong>.</p>
+<h2 id="4-reverse-engineering-the-malware">4. Reverse Engineering the Malware</h2>
+<p>Instead of fully decompiling the executable, we start with basic static analysis by running <code>strings</code>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>strings<span class="w"> </span>DaVinci.exe
+</code></pre></div>
+Among standard Windows API calls and socket error messages, we spot several interesting hardcoded strings:
+* <code>10.1.2.211</code> (The C2 server IP)
+* <code>55544</code> (The C2 server port)
+* <code>CMD-SEQ-A</code>, <code>CMD-SEQ-B</code>, <code>CMD-SEQ-C</code> (Command sequences)
+* <strong><code>sorry_im_not_the_flag_:)</code></strong></p>
+<p>This 24-character string looks highly suspicious and is likely a multi-byte XOR key used to encrypt the C2 traffic we saw at the very beginning of the PCAP.</p>
+<h2 id="5-decrypting-the-c2-traffic-finding-the-flag">5. Decrypting the C2 Traffic &amp; Finding the Flag</h2>
+<p>We go back to the initial TCP stream on port 55544. Right-clicking one of the packets, we select <strong>Follow -&gt; TCP Stream</strong> and view the data as <strong>Raw/Hex</strong>.</p>
+<p>The extracted raw payload looks like this:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>434d442d5345512d4104001b13...
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>434d442d5345512d4204010a15...
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>434d442d5345512d4304160c1a1d59120c1e2c4e181d2b1c481137034c03022c4e05530b1b17593300063a4e1b1c3a541a002c124c5f597f79132f3a01170b2c353d2a0c031d3c282c002c0d180e17034a5e1d0b5c06012b494b7f0b0c1c305402062b0017250637031847151c3a28360e2430023c5935431013135334083e305564473a1117047f57537f2d55280a070d172c3a3c140533534a2f2b1701122b061d031e181a3b5a1c1d2b040404
+</code></pre></div></p>
+<p>Notice the pattern: <code>CMD-SEQ-C</code> followed by the byte <code>04</code> (End of Transmission), followed by the encrypted payload. </p>
+<p>We isolate the encrypted payload from <code>CMD-SEQ-C</code> and input it into <strong>CyberChef</strong>.
+1. Input: Hex string (<code>160c1a1d59...</code>)
+2. Recipe: <strong>XOR</strong>
+3. Key: <code>sorry_im_not_the_flag_:)</code> (Type: UTF8)</p>
+<p>The output reveals a console command echoing the flag:
+<code>echo jctf{Dah914znHQigIolS-j7xvL5XiYooM4Uce}</code></p>
+<hr />
+<h2 id="flag">Flag</h2>
+<p><strong><code>jctf{Dah914znHQigIolS-j7xvL5XiYooM4Uce}</code></strong></p>
 
 
 
