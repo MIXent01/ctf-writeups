@@ -1,4 +1,4 @@
-# Neptune Authority (Forensics)
+# Neptune Authority
 
 **Category:** Forensics | **Difficulty:** Medium
 
