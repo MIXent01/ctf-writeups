@@ -1,5 +1,5 @@
-# CTF Writeup: file-transfer
-**Category:** Forensics  
+# file-transfer
+**Category:** Forensics | **Difficulty:** Hard
 
 ### Challenge Description
 > Our network security solution has alerted us to some suspicious traffic from a user's workstation. Can you help us figure out what is going on? 
