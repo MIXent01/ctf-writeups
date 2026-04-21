@@ -373,6 +373,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wiretap
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -389,6 +407,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solve
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -409,7 +468,7 @@
   <span class="md-ellipsis">
     
   
-    Are ya winning, son?
+    Cool Car
   
 
     
@@ -920,6 +979,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solve
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -936,7 +1025,10 @@
 
 
 <h1 id="wiretap">wiretap</h1>
-<p><strong>Category:</strong> Forensics | <strong>Points:</strong> 947</p>
+<p><strong>Category:</strong> Forensics | <strong>Points:</strong> 875</p>
+<h2 id="description">Description</h2>
+<p>Ton, they're listening to the phones meet me down at the badabing.</p>
+<h2 id="solve">Solve</h2>
 <p>We get a <code>.wav</code> file. <code>Exiftool</code> didn't show anything interesting and <code>file</code> confirmed it was  a <code>.wav</code> file. Description of this ctf was "Ton, they're listening to the phones meet me down at the badabing."</p>
 <p>It sounded like a phone number being dialed and then there was a strange sound, like from old dial-up modem or fax machine.</p>
 <p>Firstly, I decoded the phone number (DTMF) and it gave me <code>11.44.111.55.555.55.555.11.999.99.888</code>. I tried to wrap as a flag, but it was wrong.</p>

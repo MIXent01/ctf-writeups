@@ -409,7 +409,7 @@
   <span class="md-ellipsis">
     
   
-    Are ya winning, son?
+    Cool Car
   
 
     
@@ -936,7 +936,7 @@
 
 
 <h1 id="the-curators-exit">The Curator's Exit</h1>
-<p><strong>Category:</strong> Osint | <strong>Points:</strong> 923</p>
+<p><strong>Category:</strong> Osint | <strong>Points:</strong> 934</p>
 <p>We get a <code>.pdf</code> file protected with password and description: "We've received a communication from Interpol, containing a PDF. We are unsure of the contents, but believe it contains information on one of the thieves from the Louvre Heist. Your job is to find out as much as you can about this individual and send the information back to the authorities.". Firstly, I tried some simple passwords like date of the heist, but it didn't work. </p>
 <p>I decided to use <code>pdf2john</code> and <code>johntheripper</code> programs. Firstly: <code>pdf2john VF0000000011-Enc.pdf &gt;&gt; hash.txt</code> and then <code>john --wordlist=rockyou.txt hash.txt</code> and I found the password <code>cherell</code>.</p>
 
